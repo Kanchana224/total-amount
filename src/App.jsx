@@ -109,6 +109,7 @@ return (
         <Topbar/>
         <Routes>
           <Route path="/" element={<Home productData={productData} />} />
+          <Route path="/home" element={<Home productData={productData} />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
     </Router>

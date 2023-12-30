@@ -1,11 +1,14 @@
-header{
+body{
+    background-color: black !important;
+}
+header {
     position: sticky;
     top: 0;
     min-height: 80px;
     width:100%;
     margin: 0 auto;
     display: flex;
-    background-color: black;
+    background-color: rgb(21, 236, 240);
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
@@ -14,8 +17,11 @@ header{
 .logo{
     text-decoration: none;
     text-transform: uppercase;
-    color: azure;
+    color:black;
     padding-left: 40px;
+}
+.logo:hover{
+    color: rgb(247, 30, 142);
 }
 .header-links{
     display: flex;
@@ -29,8 +35,9 @@ header{
 .header-links ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: azure;
+    color:black;
     padding: 0px 15px;
+    font-weight: bolder;
 
 }
 .header-links ul li a:hover{
@@ -51,4 +58,3 @@ font-weight: bolder;
     font-size:20px !important;
     font-weight:600;
 }
-.

@@ -7,11 +7,14 @@ const ProductCard = ({ product }) => {
   const isProductInCart = cart.some((item) => item.id === product.id);
 
   return (
-    <Card>
-      <Card.Img variant="top" src={product.thumbnail} alt={product.title} />
+    <div className="container">
+
+    
+    <Card >
+      <Card.Img variant="top" src={product.thumbnail} style={{height:400}} alt={product.title} />
       <Card.Body>
         <Card.Title style={{fontSize:"26px", fontWeight:"bolder"}}>{product.title}</Card.Title>
-        <Card.Text>{product.description}</Card.Text>
+        <Card.Text style={{height:100}}>{product.description}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
@@ -29,6 +32,8 @@ const ProductCard = ({ product }) => {
         </Button>
       </Card.Body>
     </Card>
+    </div>
+ 
   );
 };
 
