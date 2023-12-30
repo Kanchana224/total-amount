@@ -15,6 +15,8 @@ function CartProvider({ children }) {
   };
 
   const updateQuantity = (itemId, newQuantity) => {
+    newQuantity = Math.max(newQuantity, 1);
+
     setCart(
       cart.map((item) =>
         item.id === itemId ? { ...item, quantity: newQuantity } : item

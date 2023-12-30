@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { CartProvider } from './components/Cartcontext';
 import ProductCard from './components/ProductCard';
-import CartPage from './components/CartPage';
+import CartPage from './components/Cartpage';
 import { Button, Card, Row, Col } from 'react-bootstrap';
+import Topbar from './components/Topbar';
 function App() {
   let productData = {
     "products": [
@@ -101,16 +102,15 @@ function App() {
 return (
   <CartProvider>
     <Router>
-      <div>
-        <nav>
+        {/* <nav>
           <Link to="/">Home</Link>
           <Link to="/cart">Cart</Link>
-        </nav>
+        </nav> */}
+        <Topbar/>
         <Routes>
           <Route path="/" element={<Home productData={productData} />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
-      </div>
     </Router>
   </CartProvider>
 );

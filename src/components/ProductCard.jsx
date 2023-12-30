@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
     <Card>
       <Card.Img variant="top" src={product.thumbnail} alt={product.title} />
       <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
+        <Card.Title style={{fontSize:"26px", fontWeight:"bolder"}}>{product.title}</Card.Title>
         <Card.Text>{product.description}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
@@ -27,17 +27,6 @@ const ProductCard = ({ product }) => {
         >
           {isProductInCart ? 'Remove from Cart' : 'Add to Cart'}
         </Button>
-        {isProductInCart && (
-          <div className="quantity-controls">
-            <Button variant="outline-secondary" onClick={() => updateQuantity(product.id, product.quantity - 1)}>
-              -
-            </Button>
-            <span className="quantity-value">{product.quantity}</span>
-            <Button variant="outline-secondary" onClick={() => updateQuantity(product.id, product.quantity + 1)}>
-              +
-            </Button>
-          </div>
-        )}
       </Card.Body>
     </Card>
   );

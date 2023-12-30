@@ -1,0 +1,54 @@
+header{
+    position: sticky;
+    top: 0;
+    min-height: 80px;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+     z-index: 100;
+}
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: azure;
+    padding-left: 40px;
+}
+.header-links{
+    display: flex;
+}
+.header-links ul li{
+    list-style:none;
+    display: inline-block;
+    font-size: 19px;
+
+}
+.header-links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: azure;
+    padding: 0px 15px;
+
+}
+.header-links ul li a:hover{
+    color: rgb(251, 22, 140);
+}
+.card{
+    margin:10px;
+border: 1px solid black !important;
+background-color: rgb(159, 247, 217) !important;
+text-align: center;
+font-weight: bolder;
+}
+.list-group-flush.list-group .list-group-item  {
+    background-color: rgb(192, 240, 224) !important;
+    font-size: 18px;
+}
+ .card-body{
+    font-size:20px !important;
+    font-weight:600;
+}
+.
